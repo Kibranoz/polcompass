@@ -1,0 +1,9 @@
+.Grid img{
+    resize: 10%;
+}
+div.grid-area{
+    background-size: cover;
+    background-image: url(./compass4.jpg)!important;
+    width:521px;
+    height:537px;
+}
