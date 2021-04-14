@@ -6,6 +6,7 @@ class Grid extends Component{
     constructor(props) {
         super(props);
       }
+      //TODO; réduire limage 
     render(){
         return ( 
             <Fragment>
