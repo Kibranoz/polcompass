@@ -17,7 +17,7 @@ class Grid extends Component{
             textAlign: "center",
             top:"50%",
 
-            transform: "translateX("+2*this.props.economic+"px)",
+            transform: "translate("+2*this.props.economic+"px,"+ (-2)*this.props.social+"px)",
             paddingTop: "267px",
             paddingBottom:"268px"
         }}>🎱</div>

@@ -11,11 +11,11 @@ class AnswerSelection extends Component{
       render(){
         return(
             <Fragment>
-                <AnswerButton answer="Totally agree" color = "green" clickHandler={this.chooseAppropriateClickHandler(1,2)}></AnswerButton>
-                <AnswerButton answer="Agree" clickHandler={this.chooseAppropriateClickHandler(1,1)} color="green"></AnswerButton>
-                <AnswerButton answer="Unsure/Neutral" color = "yellow"></AnswerButton>
-                <AnswerButton answer="Disagree" color = "red" clickHandler={this.chooseAppropriateClickHandler(-1,1)}></AnswerButton>
-                <AnswerButton answer="Totally Disagree" color = "red" clickHandler={this.chooseAppropriateClickHandler(-1,2)}></AnswerButton>
+                <AnswerButton answer="Totally agree" questionHandler = {this.nextQuestion} color = "seagreen" clickHandler={this.chooseAppropriateClickHandler(1,2)}></AnswerButton>
+                <AnswerButton answer="Agree" questionHandler = {this.nextQuestion} clickHandler={this.chooseAppropriateClickHandler(1,1)} color="darkseagreen"></AnswerButton>
+                <AnswerButton answer="Unsure/Neutral" questionHandler = {this.nextQuestion} color = "sandybrown"></AnswerButton>
+                <AnswerButton answer="Disagree" questionHandler = {this.nextQuestion} color = "lightcoral" clickHandler={this.chooseAppropriateClickHandler(-1,1)}></AnswerButton>
+                <AnswerButton answer="Totally Disagree" questionHandler = {this.nextQuestion} color = "indianred" clickHandler={this.chooseAppropriateClickHandler(-1,2)}></AnswerButton>
             </Fragment>
         )
       }
