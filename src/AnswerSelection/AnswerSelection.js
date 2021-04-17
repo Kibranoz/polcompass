@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import { Component, Fragment } from "react";
 import AnswerButton from "../AnswerButton/AnswerButton.js"
+import "./AnswerSelection.css"
 class AnswerSelection extends Component{
     constructor(props) {
         super(props);
@@ -10,6 +11,7 @@ class AnswerSelection extends Component{
       }
       render(){
         return(
+          <div className = "questionArea">
             <Fragment>
                 <AnswerButton answer="Totally agree" questionHandler = {this.nextQuestion} color = "seagreen" clickHandler={this.chooseAppropriateClickHandler(1,2)}></AnswerButton>
                 <AnswerButton answer="Agree" questionHandler = {this.nextQuestion} clickHandler={this.chooseAppropriateClickHandler(1,1)} color="darkseagreen"></AnswerButton>
@@ -17,6 +19,7 @@ class AnswerSelection extends Component{
                 <AnswerButton answer="Disagree" questionHandler = {this.nextQuestion} color = "lightcoral" clickHandler={this.chooseAppropriateClickHandler(-1,1)}></AnswerButton>
                 <AnswerButton answer="Totally Disagree" questionHandler = {this.nextQuestion} color = "indianred" clickHandler={this.chooseAppropriateClickHandler(-1,2)}></AnswerButton>
             </Fragment>
+            </div>
         )
       }
     }
