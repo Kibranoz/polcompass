@@ -11,9 +11,9 @@ class App extends Component{
     this.state = {social:0,economic:0, questionIndex:0};
     this.questions = {
 
-      //6 economic
+      //8 economic
       0 : {"question":"Taxation is theft", "affects":"economic", "direction": 1},
-      1 : {"question":"Drug use should remain criminalized", "affects":"social", "direction": 1},
+      1 : {"question":"The state should jail people for possessing illegal drugs", "affects":"social", "direction": 1},
       2 : {"question":"I support a carbon tax", "affects":"economic", "direction": -1},
       3: {"question":"It would be better if the governement controlled the economy", "affects":"economic", "direction": -1},
       4: {"question":"Sex work involving consenting adults should be legal", "affects":"social", "direction": -1},
@@ -22,7 +22,25 @@ class App extends Component{
       7: {"question":"Gay couples should be able to adopt", "affects":"social", "direction": -1},
       8: {"question":"Women dresses today are too revealing", "affects":"social", "direction": 1},
       9: {"question":"Corporations are unfairly exploiting their workers", "affects":"economic", "direction": -1},
-      10: {"question":"Charters schools are a better solution than a public education system", "affects":"economic", "direction": 1},
+      10: {"question":"Charter schools are a better solution than a public education system", "affects":"economic", "direction": 1},
+      11: {"question":"People who say things I consider objectionable should be punished", "affects":"social", "direction": 1},
+      12: {"question":"Trans people should live by the gender they want and be legally recognized as it ", "affects":"social", "direction": -1},
+      13: {"question":"The government should ensure everyone gets enough to live", "affects":"economic", "direction": -1},
+      14: {"question":"Rent control is a good idea", "affects":"economic", "direction": -1},
+      15: {"question":"If you have nothing to hide, you have nothing to fear", "affects":"social", "direction": 1},
+      16: {"question":"Access to abortion should be restricted ", "affects":"social", "direction": 1},
+      17: {"question":"We should welcome immigrants and refugees", "affects":"social", "direction": -1},
+      18: {"question":"Government should never subisize businesses", "affects":"economic", "direction": 1},
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,7 +61,7 @@ class App extends Component{
     this.setState({social:this.state.social+number});
   }
   nextQuestion = () => {
-    if (this.state.questionIndex<10){
+    if (this.state.questionIndex<18){
     this.setState({questionIndex:this.state.questionIndex+1});
     console.log('next')
   }
