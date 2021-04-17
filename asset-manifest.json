@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/polcompass/static/css/main.b9ebcd5e.chunk.css",
+    "main.js": "/polcompass/static/js/main.73c4cace.chunk.js",
+    "main.js.map": "/polcompass/static/js/main.73c4cace.chunk.js.map",
+    "runtime-main.js": "/polcompass/static/js/runtime-main.e2dc5fb8.js",
+    "runtime-main.js.map": "/polcompass/static/js/runtime-main.e2dc5fb8.js.map",
+    "static/js/2.8fed158c.chunk.js": "/polcompass/static/js/2.8fed158c.chunk.js",
+    "static/js/2.8fed158c.chunk.js.map": "/polcompass/static/js/2.8fed158c.chunk.js.map",
+    "static/js/3.8ef674d2.chunk.js": "/polcompass/static/js/3.8ef674d2.chunk.js",
+    "static/js/3.8ef674d2.chunk.js.map": "/polcompass/static/js/3.8ef674d2.chunk.js.map",
+    "index.html": "/polcompass/index.html",
+    "static/css/main.b9ebcd5e.chunk.css.map": "/polcompass/static/css/main.b9ebcd5e.chunk.css.map",
+    "static/js/2.8fed158c.chunk.js.LICENSE.txt": "/polcompass/static/js/2.8fed158c.chunk.js.LICENSE.txt",
+    "static/media/Grid.css": "/polcompass/static/media/compass4.2a227356.jpg",
+    "static/media/logo.6ce24c58.svg": "/polcompass/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2dc5fb8.js",
+    "static/js/2.8fed158c.chunk.js",
+    "static/css/main.b9ebcd5e.chunk.css",
+    "static/js/main.73c4cace.chunk.js"
+  ]
+}
