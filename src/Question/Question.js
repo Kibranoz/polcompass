@@ -10,7 +10,7 @@ class Question extends Component{
       render(){
         return(
             <Fragment>
-                <div className="question">
+                <div className="question container-fluid">
                    { this.props.questionString }
                 </div>
             </Fragment>

@@ -72,13 +72,13 @@ class App extends Component{
     <div className="App">
       <div className="container-fluid">
       <div className = "row">
-      <div className="col-12">
+      <div className="col-lg-5">
     <Grid economic = {this.state.economic} social = {this.state.social}></Grid>
-    </div></div>
-    <div className="container-fluid">
-    <div className="col-12">
+    </div>
+    <div className="col-lg-7 qContainer">
     <Question questionString = {this.questions[this.state.questionIndex]["question"]}></Question>
-    </div></div> </div>
+    </div>
+    </div></div> 
     <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.nextQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>
     </div>
   );

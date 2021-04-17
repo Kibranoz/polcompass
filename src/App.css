@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+.qContainer{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+@media (max-width:500px){
+  .qContainer{
+    padding:unset; 
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

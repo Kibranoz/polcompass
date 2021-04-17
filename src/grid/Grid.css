@@ -11,8 +11,8 @@ div.grid-area{
 }
 
 @media (max-width:500px){
-    div.grid-area, .Grid img{
-   width:100%;
+    div.grid-area{
+   width:100%!important;
    margin: unset;
    padding:unset;
    background-size: 100%;
