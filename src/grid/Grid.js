@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import { Component, Fragment } from "react";
+import compass from "./compass4.jpg"
 import "./Grid.css";
 
 class Grid extends Component{
@@ -17,11 +18,10 @@ class Grid extends Component{
             textAlign: "center",
             top:"50%",
 
-            transform: "translate("+2*this.props.economic+"px,"+ (-2)*this.props.social+"px)",
-            paddingTop: "267px",
-            paddingBottom:"268px"
-        }}>🎱</div>
-                
+            transform: "translate("+0.5*this.props.economic+"%,"+ (-0.5)*this.props.social+"%)",
+            paddingTop: "50.5%",
+            paddingBottom:"49.5%"
+        }}>🎱</div>  
         </div>
         <div>
         {this.props.economic} , {this.props.social} </div>

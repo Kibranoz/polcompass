@@ -1,3 +1,7 @@
+div.question{
+    font-size:27px;
+    min-height: 20px;
+}
 div{
-    font-size:28px;
+    font-size:27px;
 }

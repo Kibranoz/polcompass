@@ -22,7 +22,7 @@ class App extends Component{
       7: {"question":"Gay couples should be able to adopt", "affects":"social", "direction": -1},
       8: {"question":"Women dresses today are too revealing", "affects":"social", "direction": 1},
       9: {"question":"Corporations are unfairly exploiting their workers", "affects":"economic", "direction": -1},
-      10: {"question":"Schools should be handled by the private sector, and parents should be able to choose where to send their kids", "affects":"economic", "direction": 1},
+      10: {"question":"Charters schools are a better solution than a public education system", "affects":"economic", "direction": 1},
 
 
 
@@ -54,11 +54,11 @@ class App extends Component{
     <div className="App">
       <div className="container-fluid">
       <div className = "row">
-      <div className="col-xs-12">
+      <div className="col-12">
     <Grid economic = {this.state.economic} social = {this.state.social}></Grid>
     </div></div>
     <div className="container-fluid">
-    <div className="col-xs-12">
+    <div className="col-12">
     <Question questionString = {this.questions[this.state.questionIndex]["question"]}></Question>
     </div></div> </div>
     <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.nextQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>

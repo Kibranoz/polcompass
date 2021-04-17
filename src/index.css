@@ -3,10 +3,21 @@ body {
   font-family: "Futura";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height:100%!important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+footer{
+  background-color: black;
+  font-size:12px;
+  color:white;
+  text-align:center;
+  max-height: 5%;
+  width:100%;
+
+
 }
 
