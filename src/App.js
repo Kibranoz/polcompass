@@ -11,7 +11,7 @@ class App extends Component{
     this.state = {social:0,economic:0, questionIndex:0};
     this.questions = {
 
-      //8 economic
+      //11 economic
       0 : {"question":"Taxation is theft", "affects":"economic", "direction": 1},
       1 : {"question":"The state should jail people for possessing illegal drugs", "affects":"social", "direction": 1},
       2 : {"question":"I support a carbon tax", "affects":"economic", "direction": -1},
@@ -31,6 +31,21 @@ class App extends Component{
       16: {"question":"Access to abortion should be restricted ", "affects":"social", "direction": 1},
       17: {"question":"We should welcome immigrants and refugees", "affects":"social", "direction": -1},
       18: {"question":"Government should never subisize businesses", "affects":"economic", "direction": 1},
+      19: {"question":"The government should restrict the sales of weapons", "affects":"social", "direction": 1},
+      20: {"question":"It would be better if there were less things in the way of our government and our police officiers", "affects":"social", "direction": 1},
+      21: {"question":"I support universal healthcare", "affects":"economic", "direction": -1},
+      22: {"question":"If someone else's house burns, it is not my problem and I should not pay for the carelessness of others", "affects":"economic", "direction": 1},
+      23: {"question":"The police and the courts should be handled by the free markets and paid for by voluntarily individuals", "affects":"economic", "direction": 1},
+      24: {"question":"Black lives matter", "affects":"social", "direction": -1},
+
+
+
+
+
+
+
+
+
 
 
 
@@ -61,7 +76,7 @@ class App extends Component{
     this.setState({social:this.state.social+number});
   }
   nextQuestion = () => {
-    if (this.state.questionIndex<18){
+    if (this.state.questionIndex<24){
     this.setState({questionIndex:this.state.questionIndex+1});
     console.log('next')
   }
@@ -70,13 +85,14 @@ class App extends Component{
   render(){
   return (
     <div className="App">
+      <br></br>
       <div className="container-fluid">
       <div className = "row">
-      <div className="col-lg-5">
+      <div className="col-xl-5">
     <Grid economic = {this.state.economic} social = {this.state.social}></Grid>
     </div>
-    <div className="col-lg-7 qContainer">
-    <Question questionString = {this.questions[this.state.questionIndex]["question"]}></Question>
+    <div className="col-xl-7 qContainer">
+    <Question questionString = {this.questions[this.state.questionIndex]["question"]} index ={ this.state.questionIndex}></Question>
     </div>
     </div></div> 
     <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.nextQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>

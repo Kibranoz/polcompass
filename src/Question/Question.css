@@ -12,14 +12,18 @@ div.question{
     margin:12%;
     background-color: rgb(188, 255, 179);
 }
+div.index{
+    align-items:flex-end;
+
+}
 div{
     font-size:27px;
 }
 
-@media (max-width:500px){
+@media (max-width:1000px){
     .question{
     width:100%;
 
-    margin:unset;
+    margin: 1% !important;
     }
 }

@@ -12,6 +12,9 @@ class Question extends Component{
             <Fragment>
                 <div className="question container-fluid">
                    { this.props.questionString }
+                   <div className ="index">
+                     {this.props.index}/24
+                   </div>
                 </div>
             </Fragment>
         )
