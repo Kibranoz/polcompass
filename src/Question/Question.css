@@ -20,7 +20,7 @@ div{
     font-size:27px;
 }
 
-@media (max-width:1000px){
+@media (max-width:1024px){
     .question{
     width:100%;
 

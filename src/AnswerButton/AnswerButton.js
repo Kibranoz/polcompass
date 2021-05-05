@@ -8,7 +8,7 @@ class AnswerButton extends Component{
       render(){
         return(
             <Fragment>
-                <div onClick = {this.props.clickHandler} className="answerButton" style = {{backgroundColor:this.props.color}}>
+                <div onClick = {()=>{this.props.clickHandler();this.props.updateHandler();}} className="answerButton" style = {{backgroundColor:this.props.color}}>
                    { this.props.answer }
                 </div>
             </Fragment>

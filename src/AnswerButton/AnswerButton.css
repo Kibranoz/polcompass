@@ -1,7 +1,8 @@
 .answerButton{
     font-size: 16px;
     padding:5px;
-    border-style: double;
+    border-style:none;
+    border-width: thin;
 
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */

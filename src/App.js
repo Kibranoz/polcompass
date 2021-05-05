@@ -11,7 +11,7 @@ class App extends Component{
     this.state = {social:0,economic:0, questionIndex:0};
     this.questions = {
 
-      //11 economic
+      //15 economic
       0 : {"question":"Taxation is theft", "affects":"economic", "direction": 1},
       1 : {"question":"The state should jail people for possessing illegal drugs", "affects":"social", "direction": 1},
       2 : {"question":"I support a carbon tax", "affects":"economic", "direction": -1},
@@ -37,6 +37,18 @@ class App extends Component{
       22: {"question":"If someone else's house burns, it is not my problem and I should not pay for the carelessness of others", "affects":"economic", "direction": 1},
       23: {"question":"The police and the courts should be handled by the free markets and paid for by voluntarily individuals", "affects":"economic", "direction": 1},
       24: {"question":"Black lives matter", "affects":"social", "direction": -1},
+      25: {"question":"Land property isn't a legitimate form of property", "affects":"economic", "direction": -1},
+      26: {"question":"Food supply should be managed by the state", "affects":"economic", "direction": -1},
+      27: {"question":"Sick and suffering people should be able to seek medical assistance to end their own lives", "affects":"social", "direction": -1},
+      28: {"question":"Young boys should not be circumcised until they are mature to make this decision for themselves", "affects":"social", "direction": -1},
+      29: {"question":"Forcing children to hug or kiss relatives is not okay", "affects":"social", "direction": -1},
+      30: {"question":"Felons should not be able to vote", "affects":"social", "direction": 1},
+      31: {"question":"Boycotts are a better way to hold coroporations accountable than government regulation", "affects":"economic", "direction": 1},
+
+
+
+
+
 
 
 
@@ -65,22 +77,26 @@ class App extends Component{
   changeEconomicStateBy = (number) => {
     //on ne peut que passer des fonctions anonymes
     //num
-    this.nextQuestion();
+    this.switchQuestion();
     this.setState({economic:this.state.economic+number});
   }
 
   changeSocialStateBy = (number) => {
     //on ne peut que passer des fonctions anonymes
     //number = 0;
-    this.nextQuestion();
+    this.switchQuestion();
     this.setState({social:this.state.social+number});
   }
-  nextQuestion = () => {
-    if (this.state.questionIndex<24){
-    this.setState({questionIndex:this.state.questionIndex+1});
+  switchQuestion = (by=1) => {
+    if (this.state.questionIndex<31){
+    this.setState({questionIndex:this.state.questionIndex+by});
     console.log('next')
   }
   }
+  lastQuestion = () =>{
+    if (this.state.questionIndex<0){
+      this.setState({questionIndex:this.state.questionIndex-1});
+  }}
 
   render(){
   return (
@@ -95,7 +111,7 @@ class App extends Component{
     <Question questionString = {this.questions[this.state.questionIndex]["question"]} index ={ this.state.questionIndex}></Question>
     </div>
     </div></div> 
-    <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.nextQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>
+    <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.switchQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>
     </div>
   );
   }

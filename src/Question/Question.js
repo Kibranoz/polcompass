@@ -13,7 +13,7 @@ class Question extends Component{
                 <div className="question container-fluid">
                    { this.props.questionString }
                    <div className ="index">
-                     {this.props.index}/24
+                     {this.props.index}/31
                    </div>
                 </div>
             </Fragment>

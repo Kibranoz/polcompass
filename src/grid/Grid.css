@@ -15,11 +15,11 @@ div.grid-area{
    width:100%!important;
    margin: unset;
    padding:unset;
-   background-size: 100%;
-   max-height:379px;
+   height:unset;
+   background-size: contain!important;
+   background-repeat: no-repeat;
+
     }
-    .Grid img{
-        min-width: 100%!important;
-        margin:0;
-    }
+    
+    
 }
