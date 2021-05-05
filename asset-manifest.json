@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/polcompass/static/css/main.f6c1ab5f.chunk.css",
-    "main.js": "/polcompass/static/js/main.f8a5dfa8.chunk.js",
-    "main.js.map": "/polcompass/static/js/main.f8a5dfa8.chunk.js.map",
+    "main.css": "/polcompass/static/css/main.7884f7ff.chunk.css",
+    "main.js": "/polcompass/static/js/main.25dbc305.chunk.js",
+    "main.js.map": "/polcompass/static/js/main.25dbc305.chunk.js.map",
     "runtime-main.js": "/polcompass/static/js/runtime-main.e2dc5fb8.js",
     "runtime-main.js.map": "/polcompass/static/js/runtime-main.e2dc5fb8.js.map",
-    "static/js/2.8fed158c.chunk.js": "/polcompass/static/js/2.8fed158c.chunk.js",
-    "static/js/2.8fed158c.chunk.js.map": "/polcompass/static/js/2.8fed158c.chunk.js.map",
+    "static/js/2.ccf2859c.chunk.js": "/polcompass/static/js/2.ccf2859c.chunk.js",
+    "static/js/2.ccf2859c.chunk.js.map": "/polcompass/static/js/2.ccf2859c.chunk.js.map",
     "static/js/3.8ef674d2.chunk.js": "/polcompass/static/js/3.8ef674d2.chunk.js",
     "static/js/3.8ef674d2.chunk.js.map": "/polcompass/static/js/3.8ef674d2.chunk.js.map",
     "index.html": "/polcompass/index.html",
-    "static/css/main.f6c1ab5f.chunk.css.map": "/polcompass/static/css/main.f6c1ab5f.chunk.css.map",
-    "static/js/2.8fed158c.chunk.js.LICENSE.txt": "/polcompass/static/js/2.8fed158c.chunk.js.LICENSE.txt",
+    "static/css/main.7884f7ff.chunk.css.map": "/polcompass/static/css/main.7884f7ff.chunk.css.map",
+    "static/js/2.ccf2859c.chunk.js.LICENSE.txt": "/polcompass/static/js/2.ccf2859c.chunk.js.LICENSE.txt",
     "static/media/Grid.css": "/polcompass/static/media/compass4.6b565a64.jpg",
     "static/media/logo.6ce24c58.svg": "/polcompass/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e2dc5fb8.js",
-    "static/js/2.8fed158c.chunk.js",
-    "static/css/main.f6c1ab5f.chunk.css",
-    "static/js/main.f8a5dfa8.chunk.js"
+    "static/js/2.ccf2859c.chunk.js",
+    "static/css/main.7884f7ff.chunk.css",
+    "static/js/main.25dbc305.chunk.js"
   ]
 }
