@@ -74,18 +74,20 @@ class App extends Component{
 
     };
   }
-  changeEconomicStateBy = (number) => {
+  changeEconomicStateBy = (number,doSwitch) => {
     //on ne peut que passer des fonctions anonymes
     //num
-    this.switchQuestion();
+    this.switchQuestion(doSwitch);
     this.setState({economic:this.state.economic+number});
+    console.log(this.state)
   }
 
-  changeSocialStateBy = (number) => {
+  changeSocialStateBy = (number,doSwitch) => {
     //on ne peut que passer des fonctions anonymes
     //number = 0;
-    this.switchQuestion();
+    this.switchQuestion(doSwitch);
     this.setState({social:this.state.social+number});
+    console.log(this.state)
   }
   switchQuestion = (by=1) => {
     if (this.state.questionIndex<31){
@@ -93,15 +95,13 @@ class App extends Component{
     console.log('next')
   }
   }
-  lastQuestion = () =>{
-    if (this.state.questionIndex<0){
-      this.setState({questionIndex:this.state.questionIndex-1});
-  }}
+  
+  
 
   render(){
   return (
     <div className="App">
-      <br></br>
+      <div id="separator"></div>
       <div className="container-fluid">
       <div className = "row">
       <div className="col-xl-5">
@@ -111,7 +111,7 @@ class App extends Component{
     <Question questionString = {this.questions[this.state.questionIndex]["question"]} index ={ this.state.questionIndex}></Question>
     </div>
     </div></div> 
-    <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.switchQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>
+    <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.switchQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}} clickHandlerFunctionsII={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>
     </div>
   );
   }
