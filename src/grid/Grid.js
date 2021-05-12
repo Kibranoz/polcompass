@@ -18,13 +18,13 @@ class Grid extends Component{
             textAlign: "center",
             top:"50%",
 
-            transform: "translate("+0.5*this.props.economic+"%,"+ (-0.5)*this.props.social+"%)",
+            transform: "translate("+0.5*this.props.identite+"%,"+ (-0.5)*this.props.socioeconomique+"%)",
             paddingTop: "50.5%",
             paddingBottom:"49.5%"
         }}>🎱</div>  
         </div>
         <div>
-        {this.props.economic} , {this.props.social} </div>
+        {this.props.identite} , {this.props.socioeconomique} </div>
         </Fragment>
         );
     }

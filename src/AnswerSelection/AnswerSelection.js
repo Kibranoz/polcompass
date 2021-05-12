@@ -5,7 +5,7 @@ import "./AnswerSelection.css"
 class AnswerSelection extends Component{
     constructor(props) {
         super(props);
-        this.infos = {lastAffected:"social",lastDirection:0,lastIntensity:0, lastAnswer:1, canGoBack:false};
+        this.infos = {lastAffected:"socioeconomique",lastDirection:0,lastIntensity:0, lastAnswer:1, canGoBack:false};
       }
       updateHandler = (answer,intensity,lastDirection,lastIntensity,) => {
         this.infos = {lastAffected:this.props.question["affects"],lastDirection:Number(this.props.question["direction"]),lastIntensity:intensity, lastAnswer:answer, canGoBack:true};
@@ -42,11 +42,11 @@ class AnswerSelection extends Component{
         return(
           <div className = "questionArea">
             <Fragment>
-                <AnswerButton answer="Totally agree" color = "#81D799" clickHandler={this.chooseAppropriateClickHandler(1,2)} updater={this.chooseUpdateInfos(1,2)} ></AnswerButton>
-                <AnswerButton answer="Agree"  clickHandler={this.chooseAppropriateClickHandler(1,1)} color="#BAE6C2" updater={this.chooseUpdateInfos(1,1)} ></AnswerButton>
-                <AnswerButton answer="Unsure/Neutral" clickHandler={this.chooseAppropriateClickHandler(0,0)} updater={this.chooseUpdateInfos(0,0)} color = "#EEE573"></AnswerButton>
-                <AnswerButton answer="Disagree"  color = "#FFADAB" clickHandler={this.chooseAppropriateClickHandler(-1,1)} updater={this.chooseUpdateInfos(-1,1)}></AnswerButton>
-                <AnswerButton answer="Totally Disagree"  color = "#EE7373" clickHandler={this.chooseAppropriateClickHandler(-1,2)}updater={this.chooseUpdateInfos(-1,2)}></AnswerButton>
+                <AnswerButton answer="Complètement d'accord" color = "#81D799" clickHandler={this.chooseAppropriateClickHandler(1,2)} updater={this.chooseUpdateInfos(1,2)} ></AnswerButton>
+                <AnswerButton answer="En accorc"  clickHandler={this.chooseAppropriateClickHandler(1,1)} color="#BAE6C2" updater={this.chooseUpdateInfos(1,1)} ></AnswerButton>
+                <AnswerButton answer="Ne se prononce pas" clickHandler={this.chooseAppropriateClickHandler(0,0)} updater={this.chooseUpdateInfos(0,0)} color = "#EEE573"></AnswerButton>
+                <AnswerButton answer="En désaccord"  color = "#FFADAB" clickHandler={this.chooseAppropriateClickHandler(-1,1)} updater={this.chooseUpdateInfos(-1,1)}></AnswerButton>
+                <AnswerButton answer="Complètement en désaccord"  color = "#EE7373" clickHandler={this.chooseAppropriateClickHandler(-1,2)}updater={this.chooseUpdateInfos(-1,2)}></AnswerButton>
                 <AnswerButton answer="Go back" color = "#ffa8d7" clickHandler={this.backHandler()}updater={this.updateInfosBack} ></AnswerButton>
             </Fragment>
             </div>
