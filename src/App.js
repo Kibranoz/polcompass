@@ -10,56 +10,23 @@ class App extends Component{
     super(props);
     this.state = {socioeconomique:0,identite:0, questionIndex:0};
     this.questions = {
-
-      //15 identite
-      0 : {"question":"Taxation is theft", "affects":"identite", "direction": 1},
-      1 : {"question":"The state should jail people for possessing illegal drugs", "affects":"socioeconomique", "direction": 1},
-      2 : {"question":"I support a carbon tax", "affects":"identite", "direction": -1},
-      3: {"question":"It would be better if the governement controlled the economy", "affects":"identite", "direction": -1},
-      4: {"question":"Sex work involving consenting adults should be legal", "affects":"socioeconomique", "direction": -1},
-      5: {"question":"Countries like China are doing a better job at governing than countries like the United States or Canada", "affects":"socioeconomique", "direction": 1},
-      6: {"question":"A minimum wage set by the gouvernment is a bad idea : let people negotiate wages on their own", "affects":"identite", "direction": 1},
-      7: {"question":"Gay couples should be able to adopt", "affects":"socioeconomique", "direction": -1},
-      8: {"question":"Women dresses today are too revealing", "affects":"socioeconomique", "direction": 1},
-      9: {"question":"Corporations are unfairly exploiting their workers", "affects":"identite", "direction": -1},
-      10: {"question":"Charter schools are a better solution than a public education system", "affects":"identite", "direction": 1},
-      11: {"question":"People who say things I consider objectionable should be punished", "affects":"socioeconomique", "direction": 1},
-      12: {"question":"Trans people should live by the gender they want and be legally recognized as it ", "affects":"socioeconomique", "direction": -1},
-      13: {"question":"The government should ensure everyone gets enough to live", "affects":"identite", "direction": -1},
-      14: {"question":"Rent control is a good idea", "affects":"identite", "direction": -1},
-      15: {"question":"If you have nothing to hide, you have nothing to fear", "affects":"socioeconomique", "direction": 1},
-      16: {"question":"Access to abortion should be restricted ", "affects":"socioeconomique", "direction": 1},
-      17: {"question":"We should welcome immigrants and refugees", "affects":"socioeconomique", "direction": -1},
-      18: {"question":"Government should never subisize businesses", "affects":"identite", "direction": 1},
-      19: {"question":"The government should restrict the sales of weapons", "affects":"socioeconomique", "direction": 1},
-      20: {"question":"It would be better if there were less things in the way of our government and our police officiers", "affects":"socioeconomique", "direction": 1},
-      21: {"question":"I support universal healthcare", "affects":"identite", "direction": -1},
-      22: {"question":"If someone else's house burns, it is not my problem and I should not pay for the carelessness of others", "affects":"identite", "direction": 1},
-      23: {"question":"The police and the courts should be handled by the free markets and paid for by voluntarily individuals", "affects":"identite", "direction": 1},
-      24: {"question":"Black lives matter", "affects":"socioeconomique", "direction": -1},
-      25: {"question":"Land property isn't a legitimate form of property", "affects":"identite", "direction": -1},
-      26: {"question":"Food supply should be managed by the state", "affects":"identite", "direction": -1},
-      27: {"question":"Sick and suffering people should be able to seek medical assistance to end their own lives", "affects":"socioeconomique", "direction": -1},
-      28: {"question":"Young boys should not be circumcised until they are mature to make this decision for themselves", "affects":"socioeconomique", "direction": -1},
-      29: {"question":"Forcing children to hug or kiss relatives is not okay", "affects":"socioeconomique", "direction": -1},
-      30: {"question":"Felons should not be able to vote", "affects":"socioeconomique", "direction": 1},
-      31: {"question":"Boycotts are a better way to hold coroporations accountable than government regulation", "affects":"identite", "direction": 1},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//7 id
+      0 : {"question":"Les taxes et impôts constituent une forme de vol ", "affects":"socioeconomique", "direction": 1},
+      1 : {"question":"Le mode de production capitaliste est un vol envers la classe prolétaire", "affects":"socioeconomique", "direction": -1},
+      2 : {"question":"Aucun immigrant ne devrait entrer au Québec sans connaitre le francais, ou montrer une intention de l'apprendre", "affects":"identite", "direction": 1},
+      3 : {"question":"Les infirmier.ères et les fonctionnaires administratifs au service de l'état devraient avoir le droit de porter des signes religieux aux travail", "affects":"identite", "direction": -1},
+      4 : {"question":"Les policiers.ères et les juges, les enseignant.es devraient avoir le droit de porter des signes religieux aux travail", "affects":"identite", "direction": -1},
+      5 : {"question":"Il faudrait nationaliser les mines de lithium", "affects":"socioeconomique", "direction": -1},
+      6 : {"question":"Il faut privatiser Hydro-Québec et la SAQ", "affects":"socioeconomique", "direction": 1},
+      7 : {"question":"Afin de protéger le francais, il faut investir plus dans des programmes de francisation pour les nouveaux arrivants", "affects":"socioeconomique", "direction": -1},
+      8 : {"question":"Le Québec devrait être un pays indépendant", "affects":"identite", "direction": 1},
+      9 : {"question":"Si le Québec devenait un pays, il devrait garder ses frontières ouvertes avec le Canada et les États-Unis", "affects":"identite", "direction": -1},
+      10 : {"question":"J'accorde une grande importance à la protection de la langue francaise au Québec", "affects":"identite", "direction": 1},
+      11 : {"question":"Internet devrait être un service public accessible à tous", "affects":"socioeconomique", "direction": -1},
+      12 : {"question":"Le mouvement woke menace notre facon de vivre", "affects":"identite", "direction": 1},
+      13 : {"question":"Je suis en faveur de la tarification du carbone, comme la bourse du carbone", "affects":"socioeconomique", "direction": -1},
+      14 : {"question":"Je suis en faveur d'une expansion de la production de la production d'éléctricité d'Hydro-Quebec, même si cela signifie une augmentation du prix de l'électricité à moyen terme", "affects":"socioeconomique", "direction": -1},
+      13 : {"question":"Il faut réduire ;", "affects":"socioeconomique", "direction": -1},
 
 
 
@@ -90,7 +57,7 @@ class App extends Component{
     console.log(this.state)
   }
   switchQuestion = (by=1) => {
-    if (this.state.questionIndex<31){
+    if (this.state.questionIndex<15){
     this.setState({questionIndex:this.state.questionIndex+by});
     console.log('next')
   }

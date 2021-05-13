@@ -43,11 +43,11 @@ class AnswerSelection extends Component{
           <div className = "questionArea">
             <Fragment>
                 <AnswerButton answer="Complètement d'accord" color = "#81D799" clickHandler={this.chooseAppropriateClickHandler(1,2)} updater={this.chooseUpdateInfos(1,2)} ></AnswerButton>
-                <AnswerButton answer="En accorc"  clickHandler={this.chooseAppropriateClickHandler(1,1)} color="#BAE6C2" updater={this.chooseUpdateInfos(1,1)} ></AnswerButton>
+                <AnswerButton answer="D'accord"  clickHandler={this.chooseAppropriateClickHandler(1,1)} color="#BAE6C2" updater={this.chooseUpdateInfos(1,1)} ></AnswerButton>
                 <AnswerButton answer="Ne se prononce pas" clickHandler={this.chooseAppropriateClickHandler(0,0)} updater={this.chooseUpdateInfos(0,0)} color = "#EEE573"></AnswerButton>
                 <AnswerButton answer="En désaccord"  color = "#FFADAB" clickHandler={this.chooseAppropriateClickHandler(-1,1)} updater={this.chooseUpdateInfos(-1,1)}></AnswerButton>
                 <AnswerButton answer="Complètement en désaccord"  color = "#EE7373" clickHandler={this.chooseAppropriateClickHandler(-1,2)}updater={this.chooseUpdateInfos(-1,2)}></AnswerButton>
-                <AnswerButton answer="Go back" color = "#ffa8d7" clickHandler={this.backHandler()}updater={this.updateInfosBack} ></AnswerButton>
+                <AnswerButton answer="Retour" color = "#ffa8d7" clickHandler={this.backHandler()}updater={this.updateInfosBack} ></AnswerButton>
             </Fragment>
             </div>
         )
