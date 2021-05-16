@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/polcompass/static/css/main.a487256d.chunk.css",
-    "main.js": "/polcompass/static/js/main.0d8aa240.chunk.js",
-    "main.js.map": "/polcompass/static/js/main.0d8aa240.chunk.js.map",
-    "runtime-main.js": "/polcompass/static/js/runtime-main.e2dc5fb8.js",
-    "runtime-main.js.map": "/polcompass/static/js/runtime-main.e2dc5fb8.js.map",
-    "static/js/2.fc171251.chunk.js": "/polcompass/static/js/2.fc171251.chunk.js",
-    "static/js/2.fc171251.chunk.js.map": "/polcompass/static/js/2.fc171251.chunk.js.map",
-    "static/js/3.8ef674d2.chunk.js": "/polcompass/static/js/3.8ef674d2.chunk.js",
-    "static/js/3.8ef674d2.chunk.js.map": "/polcompass/static/js/3.8ef674d2.chunk.js.map",
+    "main.js": "/polcompass/static/js/main.cbfbbed7.chunk.js",
+    "main.js.map": "/polcompass/static/js/main.cbfbbed7.chunk.js.map",
+    "runtime-main.js": "/polcompass/static/js/runtime-main.ce3398e1.js",
+    "runtime-main.js.map": "/polcompass/static/js/runtime-main.ce3398e1.js.map",
+    "static/js/2.5185df6b.chunk.js": "/polcompass/static/js/2.5185df6b.chunk.js",
+    "static/js/2.5185df6b.chunk.js.map": "/polcompass/static/js/2.5185df6b.chunk.js.map",
+    "static/js/3.2d3b4dba.chunk.js": "/polcompass/static/js/3.2d3b4dba.chunk.js",
+    "static/js/3.2d3b4dba.chunk.js.map": "/polcompass/static/js/3.2d3b4dba.chunk.js.map",
     "index.html": "/polcompass/index.html",
     "static/css/main.a487256d.chunk.css.map": "/polcompass/static/css/main.a487256d.chunk.css.map",
-    "static/js/2.fc171251.chunk.js.LICENSE.txt": "/polcompass/static/js/2.fc171251.chunk.js.LICENSE.txt",
+    "static/js/2.5185df6b.chunk.js.LICENSE.txt": "/polcompass/static/js/2.5185df6b.chunk.js.LICENSE.txt",
     "static/media/Grid.css": "/polcompass/static/media/compass4.f2ab2af6.jpg",
     "static/media/logo.6ce24c58.svg": "/polcompass/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e2dc5fb8.js",
-    "static/js/2.fc171251.chunk.js",
+    "static/js/runtime-main.ce3398e1.js",
+    "static/js/2.5185df6b.chunk.js",
     "static/css/main.a487256d.chunk.css",
-    "static/js/main.0d8aa240.chunk.js"
+    "static/js/main.cbfbbed7.chunk.js"
   ]
 }
