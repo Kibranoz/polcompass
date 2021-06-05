@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/polcompass/static/css/main.1f8c91db.chunk.css",
-    "main.js": "/polcompass/static/js/main.c9854a43.chunk.js",
-    "main.js.map": "/polcompass/static/js/main.c9854a43.chunk.js.map",
+    "main.js": "/polcompass/static/js/main.428473f1.chunk.js",
+    "main.js.map": "/polcompass/static/js/main.428473f1.chunk.js.map",
     "runtime-main.js": "/polcompass/static/js/runtime-main.ce3398e1.js",
     "runtime-main.js.map": "/polcompass/static/js/runtime-main.ce3398e1.js.map",
     "static/js/2.5185df6b.chunk.js": "/polcompass/static/js/2.5185df6b.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ce3398e1.js",
     "static/js/2.5185df6b.chunk.js",
     "static/css/main.1f8c91db.chunk.css",
-    "static/js/main.c9854a43.chunk.js"
+    "static/js/main.428473f1.chunk.js"
   ]
 }
