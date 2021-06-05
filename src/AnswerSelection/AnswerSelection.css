@@ -2,3 +2,22 @@
     max-width:600px;
     margin:auto;
 }
+.questionAreaMobile{
+    display: none;
+}
+
+@media (max-width:500px){
+.questionArea{
+    display: none;
+}
+
+.questionAreaMobile{
+    display: flex;
+    flex-direction: row;
+    align-self:flex-end;
+    bottom:0;
+    position:fixed;
+    width:100%;
+}
+
+}

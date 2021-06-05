@@ -10,3 +10,21 @@
 
 
 }
+
+@media (max-width:500px) {
+    .answerButton{
+        font-size: 25px;
+        padding:10px;
+        flex-grow: 1!important;
+        position:sticky;
+        align-self:flex-end;
+        padding-bottom: 20px;
+    }
+    
+}
+
+
+i{
+    color: black;
+
+}

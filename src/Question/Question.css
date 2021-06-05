@@ -27,3 +27,8 @@ div{
     margin: 1% !important;
     }
 }
+@media(max-width:500px){
+    div.question{
+        margin:auto;
+    }
+}

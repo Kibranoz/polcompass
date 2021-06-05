@@ -13,14 +13,15 @@ class Grid extends Component{
             <Fragment>
             <div className = "grid-area">
                 <div className = "pointElement" style = {{
-            fontSize: 14,
+            fontSize: 20,
             "line-height":"50%",
             textAlign: "center",
             top:"50%",
-
-            transform: "translate("+0.5*this.props.socioeconomique+"%,"+ (-0.5)*this.props.identite+"%)",
+            bottom:"50%",
+            transform: "translate("+1*this.props.socioeconomique+"%,"+ (-1)*this.props.identite+"%)",
             paddingTop: "50.5%",
-            paddingBottom:"49.5%"
+            paddingBottom:"49.5%",
+            maxWidth:"100%!important",
         }}>🎱</div>  
         </div>
         <div>

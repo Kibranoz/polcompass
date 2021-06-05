@@ -39,7 +39,7 @@
   .qContainer{
     padding:unset; 
   }
-}
+  }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -47,4 +47,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div.App{
+  max-height:100%;
+  max-width: 100%;
 }
