@@ -3,7 +3,7 @@
     padding:5px;
     border-style:none;
     border-width: thin;
-
+    cursor:pointer;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     user-select: none; /* Standard */
@@ -19,7 +19,6 @@
         position:sticky;
         align-self:flex-end;
         padding-bottom: 20px;
-        cursor:pointer;
     }
     
 }
