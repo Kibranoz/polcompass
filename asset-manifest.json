@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/polcompass/static/css/main.1f8c91db.chunk.css",
-    "main.js": "/polcompass/static/js/main.428473f1.chunk.js",
-    "main.js.map": "/polcompass/static/js/main.428473f1.chunk.js.map",
-    "runtime-main.js": "/polcompass/static/js/runtime-main.ce3398e1.js",
-    "runtime-main.js.map": "/polcompass/static/js/runtime-main.ce3398e1.js.map",
-    "static/js/2.5185df6b.chunk.js": "/polcompass/static/js/2.5185df6b.chunk.js",
-    "static/js/2.5185df6b.chunk.js.map": "/polcompass/static/js/2.5185df6b.chunk.js.map",
-    "static/js/3.2d3b4dba.chunk.js": "/polcompass/static/js/3.2d3b4dba.chunk.js",
-    "static/js/3.2d3b4dba.chunk.js.map": "/polcompass/static/js/3.2d3b4dba.chunk.js.map",
+    "main.css": "/polcompass/static/css/main.a0ce0284.chunk.css",
+    "main.js": "/polcompass/static/js/main.535e2856.chunk.js",
+    "main.js.map": "/polcompass/static/js/main.535e2856.chunk.js.map",
+    "runtime-main.js": "/polcompass/static/js/runtime-main.e2dc5fb8.js",
+    "runtime-main.js.map": "/polcompass/static/js/runtime-main.e2dc5fb8.js.map",
+    "static/js/2.87b1a230.chunk.js": "/polcompass/static/js/2.87b1a230.chunk.js",
+    "static/js/2.87b1a230.chunk.js.map": "/polcompass/static/js/2.87b1a230.chunk.js.map",
+    "static/js/3.8ef674d2.chunk.js": "/polcompass/static/js/3.8ef674d2.chunk.js",
+    "static/js/3.8ef674d2.chunk.js.map": "/polcompass/static/js/3.8ef674d2.chunk.js.map",
     "index.html": "/polcompass/index.html",
-    "static/css/main.1f8c91db.chunk.css.map": "/polcompass/static/css/main.1f8c91db.chunk.css.map",
-    "static/js/2.5185df6b.chunk.js.LICENSE.txt": "/polcompass/static/js/2.5185df6b.chunk.js.LICENSE.txt",
-    "static/media/Grid.css": "/polcompass/static/media/compass4.f2ab2af6.jpg",
+    "static/css/main.a0ce0284.chunk.css.map": "/polcompass/static/css/main.a0ce0284.chunk.css.map",
+    "static/js/2.87b1a230.chunk.js.LICENSE.txt": "/polcompass/static/js/2.87b1a230.chunk.js.LICENSE.txt",
+    "static/media/Grid.css": "/polcompass/static/media/compass4.6b565a64.jpg",
     "static/media/logo.6ce24c58.svg": "/polcompass/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce3398e1.js",
-    "static/js/2.5185df6b.chunk.js",
-    "static/css/main.1f8c91db.chunk.css",
-    "static/js/main.428473f1.chunk.js"
+    "static/js/runtime-main.e2dc5fb8.js",
+    "static/js/2.87b1a230.chunk.js",
+    "static/css/main.a0ce0284.chunk.css",
+    "static/js/main.535e2856.chunk.js"
   ]
 }
