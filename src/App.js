@@ -29,7 +29,7 @@ class App extends Component{
 15: {"question":"If you have nothing to hide, you have nothing to fear", "affects":"social", "direction": 1},
 16: {"question":"Access to abortion should be restricted ", "affects":"social", "direction": 1},
 17: {"question":"We should welcome immigrants and refugees", "affects":"social", "direction": -1},
-18: {"question":"Government should never subisize businesses", "affects":"economic", "direction": 1},
+18: {"question":"The government should never subisize businesses", "affects":"economic", "direction": 1},
 19: {"question":"The government should restrict the sales of weapons", "affects":"social", "direction": 1},
 20: {"question":"It would be better if there were less things in the way of our government and our police officiers", "affects":"social", "direction": 1},
 21: {"question":"I support universal healthcare", "affects":"economic", "direction": -1},
@@ -39,45 +39,23 @@ class App extends Component{
 25: {"question":"Land property isn't a legitimate form of property", "affects":"economic", "direction": -1},
 26: {"question":"Food supply should be managed by the state", "affects":"economic", "direction": -1},
 27: {"question":"Sick and suffering people should be able to seek medical assistance to end their own lives", "affects":"social", "direction": -1},
-28: {"question":"Young boys should not be circumcised until they are mature to make this decision for themselves", "affects":"social", "direction": -1},
-29: {"question":"Forcing children to hug or kiss relatives is not okay", "affects":"social", "direction": -1},
+28: {"question":"Laws and rules are not to be debated. One must always follow them", "affects":"social", "direction": 1},
+29: {"question":"Forcing children to hug or kiss relatives is violating bodily autonomy", "affects":"social", "direction": -1},
 30: {"question":"Felons should not be able to vote", "affects":"social", "direction": 1},
 31: {"question":"Boycotts are a better way to hold coroporations accountable than government regulation", "affects":"economic", "direction": 1},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+32: {"question":"A benevolent dictator is preferable to an unperfect democracy", "affects":"social", "direction": 1},
+33: {"question":"The police should be able to search homes without any warrant", "affects":"social", "direction": 1},
+34: {"question":"It's morally okay if someone hungry steals from the grocery store", "affects":"social", "direction": -1},
+35: {"question":"Price gouging is an healthy market mechanism to avoid overconsumption in supply crisis", "affects":"economic", "direction": 1},
+36: {"question":"Free trade is always beneficient between nations", "affects":"economic", "direction": 1},
+37: {"question":"The rise of cryptocurrencies is positive because it remove monetary control from the government", "affects":"economic", "direction": 1},
+38: {"question":"Unions are extorting consumers and employers", "affects":"economic", "direction": 1},
+39: {"question":"The means of production should belong to the workers who uses them", "affects":"economic", "direction": -1},
+40: {"question":"The government should ensure there is competition, even by breaking up businesses if necessary", "affects":"economic", "direction": -1},
+41: {"question":"As long as all partners consent, there are nothing wrong with three-or-more relationships", "affects":"social", "direction": -1},
+42: {"question":"Religion should take a bigger role in society", "affects":"social", "direction": 1},
+43: {"question":"A poor Iranian and a poor American have much more in common that a poor American and a rich American", "affects":"economic", "direction": -1},
+44: {"question":"The environnmental disaster we are in is the proof of the failure of capitalism", "affects":"economic", "direction": -1}
 
     };
   }
@@ -99,7 +77,7 @@ class App extends Component{
   switchQuestion = (by=1) => {
     if (this.state.questionIndex<44){
     this.setState({questionIndex:this.state.questionIndex+by});
-    console.log('next')
+    console.log(this.state.questionIndex);
   }
   }
   
