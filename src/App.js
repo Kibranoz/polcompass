@@ -85,18 +85,12 @@ class App extends Component{
   render(){
   return (
     <div className="App">
-      <br></br>
-      <div className="container-fluid">
-      <div className = "row">
-      <div className="col-xl-5">
-    <Grid economic = {this.state.economic} social = {this.state.social}></Grid>
-    </div>
-    <div className="col-xl-7 qContainer">
-    <Question questionString = {this.questions[this.state.questionIndex]["question"]} index ={ this.state.questionIndex}></Question>
-    </div>
-    </div></div> 
-    <AnswerSelection question = {this.questions[this.state.questionIndex]} questionHandler = {this.nextQuestion} clickHandlerFunctions={{"economic":this.changeEconomicStateBy,"social": this.changeSocialStateBy}}></AnswerSelection>
-    </div>
+      <div className="overviewArea">
+      <Grid economic={this.state.economic} social={this.state.social}></Grid>
+        <Question questionString={this.questions[this.state.questionIndex]["question"]} index={this.state.questionIndex}></Question>
+      </div>
+      <AnswerSelection question={this.questions[this.state.questionIndex]} questionHandler={this.nextQuestion} clickHandlerFunctions={{ "economic": this.changeEconomicStateBy, "social": this.changeSocialStateBy }}></AnswerSelection>
+      </div>
   );
   }
   

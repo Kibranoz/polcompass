@@ -10,22 +10,20 @@ class Grid extends Component{
       //TODO; réduire limage 
     render(){
         return ( 
-            <Fragment>
+            <div className="grid-section">
             <div className = "grid-area">
                 <div className = "pointElement" style = {{
             fontSize: 14,
-            "line-height":"50%",
+            position:"relative",
             textAlign: "center",
-            top:"50%",
-
-            transform: "translate("+0.5*this.props.economic+"%,"+ (-0.5)*this.props.social+"%)",
-            paddingTop: "50.5%",
-            paddingBottom:"49.5%"
+            transform: "translate("+(25/12)*this.props.economic+"%,"+ (-25/13)*this.props.social+"%)",
+            paddingTop: "50%",
+            paddingBottom:"50%"
         }}>🎱</div>  
         </div>
         <div>
         {this.props.economic} , {this.props.social} </div>
-        </Fragment>
+        </div>
         );
     }
 }

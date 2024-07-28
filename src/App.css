@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.overviewArea {
+  display: flex;
+  height: 100%;
+  padding-bottom: 10px;
 }
 
 .App-logo {

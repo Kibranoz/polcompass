@@ -11,7 +11,7 @@ class AnswerSelection extends Component{
       }
       render(){
         return(
-          <div className = "questionArea">
+          <div className = "answerArea">
             <Fragment>
                 <AnswerButton answer="Totally agree" questionHandler = {this.nextQuestion} color = "seagreen" clickHandler={this.chooseAppropriateClickHandler(1,2)}></AnswerButton>
                 <AnswerButton answer="Agree" questionHandler = {this.nextQuestion} clickHandler={this.chooseAppropriateClickHandler(1,1)} color="darkseagreen"></AnswerButton>

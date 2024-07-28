@@ -2,10 +2,7 @@
     font-size: 16px;
     padding:5px;
     border-style: double;
-
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    user-select: none; /* Standard */
-
+    width: 100%;
+    margin:auto;
 
 }
