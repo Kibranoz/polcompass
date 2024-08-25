@@ -4,5 +4,11 @@
     border-style: double;
     width: 100%;
     margin:auto;
+    cursor: pointer;
+}
 
+.answerButtonMobile {
+    width: 20%;
+    padding: 5px;
+    cursor: pointer;
 }

@@ -5,7 +5,12 @@ import  Grid  from "./grid/Grid.js";
 import Question from "./Question/Question.js";
 import AnswerSelection from "./AnswerSelection/AnswerSelection.js"
 import { Component } from 'react';
+import AnswerSelectionMobile from './AnswerSelection/AnswerSelectionMobile.js';
 class App extends Component{
+   getIfMobile() {
+    let width = Math.max(window.screen.width, window.innerWidth);
+    return width<=500
+  }
   constructor(props) {
     super(props);
     this.state = {social:0,economic:0, questionIndex:0};
@@ -39,27 +44,6 @@ class App extends Component{
       24: {"question":"Black lives matter", "affects":"social", "direction": -1},
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     };
   }
   changeEconomicStateBy = (number) => {
@@ -83,14 +67,16 @@ class App extends Component{
   }
 
   render(){
+    let answerSelection = this.getIfMobile() ? (<AnswerSelectionMobile question={this.questions[this.state.questionIndex]} questionHandler={this.nextQuestion} clickHandlerFunctions={{ "economic": this.changeEconomicStateBy, "social": this.changeSocialStateBy }}></AnswerSelectionMobile>) :
+    (      <AnswerSelection question={this.questions[this.state.questionIndex]} questionHandler={this.nextQuestion} clickHandlerFunctions={{ "economic": this.changeEconomicStateBy, "social": this.changeSocialStateBy }}></AnswerSelection>    )
   return (
     <div className="App">
       <div className="overviewArea">
       <Grid economic={this.state.economic} social={this.state.social}></Grid>
         <Question questionString={this.questions[this.state.questionIndex]["question"]} index={this.state.questionIndex}></Question>
       </div>
-      <AnswerSelection question={this.questions[this.state.questionIndex]} questionHandler={this.nextQuestion} clickHandlerFunctions={{ "economic": this.changeEconomicStateBy, "social": this.changeSocialStateBy }}></AnswerSelection>
-      </div>
+      {answerSelection}
+        </div>
   );
   }
   

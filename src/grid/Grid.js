@@ -9,9 +9,11 @@ class Grid extends Component{
       }
       //TODO; réduire limage 
     render(){
+        console.log("translate("+(25/12)*this.props.economic+"%,"+ (-25/13)*this.props.social+"%)")
         return ( 
             <div className="grid-section">
             <div className = "grid-area">
+                
                 <div className = "pointElement" style = {{
             fontSize: 14,
             position:"relative",
