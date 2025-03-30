@@ -1,24 +1,17 @@
 {
   "files": {
-    "main.css": "/polcompass/static/css/main.a0ce0284.chunk.css",
-    "main.js": "/polcompass/static/js/main.8737cb88.chunk.js",
-    "main.js.map": "/polcompass/static/js/main.8737cb88.chunk.js.map",
-    "runtime-main.js": "/polcompass/static/js/runtime-main.e2dc5fb8.js",
-    "runtime-main.js.map": "/polcompass/static/js/runtime-main.e2dc5fb8.js.map",
-    "static/js/2.87b1a230.chunk.js": "/polcompass/static/js/2.87b1a230.chunk.js",
-    "static/js/2.87b1a230.chunk.js.map": "/polcompass/static/js/2.87b1a230.chunk.js.map",
-    "static/js/3.8ef674d2.chunk.js": "/polcompass/static/js/3.8ef674d2.chunk.js",
-    "static/js/3.8ef674d2.chunk.js.map": "/polcompass/static/js/3.8ef674d2.chunk.js.map",
+    "main.css": "/polcompass/static/css/main.d463a7b6.css",
+    "main.js": "/polcompass/static/js/main.61b3359b.js",
+    "static/js/453.2e99308e.chunk.js": "/polcompass/static/js/453.2e99308e.chunk.js",
+    "static/media/compass4.jpg": "/polcompass/static/media/compass4.2a2273560f3d849068e2.jpg",
+    "static/media/logo.svg": "/polcompass/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/polcompass/index.html",
-    "static/css/main.a0ce0284.chunk.css.map": "/polcompass/static/css/main.a0ce0284.chunk.css.map",
-    "static/js/2.87b1a230.chunk.js.LICENSE.txt": "/polcompass/static/js/2.87b1a230.chunk.js.LICENSE.txt",
-    "static/media/Grid.css": "/polcompass/static/media/compass4.6b565a64.jpg",
-    "static/media/logo.6ce24c58.svg": "/polcompass/static/media/logo.6ce24c58.svg"
+    "main.d463a7b6.css.map": "/polcompass/static/css/main.d463a7b6.css.map",
+    "main.61b3359b.js.map": "/polcompass/static/js/main.61b3359b.js.map",
+    "453.2e99308e.chunk.js.map": "/polcompass/static/js/453.2e99308e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.e2dc5fb8.js",
-    "static/js/2.87b1a230.chunk.js",
-    "static/css/main.a0ce0284.chunk.css",
-    "static/js/main.8737cb88.chunk.js"
+    "static/css/main.d463a7b6.css",
+    "static/js/main.61b3359b.js"
   ]
 }
