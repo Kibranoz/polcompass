@@ -4,6 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDOKfC8KzOXDEXPfR6necBrRDjd72M0z14",
+  authDomain: "polcompass.firebaseapp.com",
+  projectId: "polcompass",
+  storageBucket: "polcompass.appspot.com",
+  messagingSenderId: "1082550675127",
+  appId: "1:1082550675127:web:516b1f05c59b8194b78f32",
+  measurementId: "G-2DW8X63344"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
