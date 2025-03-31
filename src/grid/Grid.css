@@ -1,4 +1,4 @@
-.Grid img{
+.Grid img {
     resize: 10%;
 }
 
@@ -7,15 +7,3 @@
     flex-direction: column;
     margin: auto;
 }
-
-div.grid-area{
-    background-size: cover;
-    background-image: url(./compass4.jpg)!important;
-    width: 25vw;
-    height: 25.767754325vw;
-    min-width: 300px;
-    min-height: 309.213051823309px;
-    align-content: center;
-
-}
-
