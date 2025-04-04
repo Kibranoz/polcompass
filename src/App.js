@@ -47,22 +47,17 @@ class App extends Component{
     };
   }
   changeEconomicStateBy = (number) => {
-    //on ne peut que passer des fonctions anonymes
-    //num
     this.nextQuestion();
     this.setState({economic:this.state.economic+number});
   }
 
   changeSocialStateBy = (number) => {
-    //on ne peut que passer des fonctions anonymes
-    //number = 0;
     this.nextQuestion();
     this.setState({social:this.state.social+number});
   }
   nextQuestion = () => {
     if (this.state.questionIndex<24){
     this.setState({questionIndex:this.state.questionIndex+1});
-    console.log('next')
   }
   }
 
