@@ -1,6 +1,4 @@
-import logo, { ReactComponent } from './logo.svg';
 import './App.css';
-import { render } from '@testing-library/react';
 import  Grid  from "./grid/Grid.js";
 import Question from "./Question/Question.js";
 import AnswerSelection from "./AnswerSelection/AnswerSelection.js"
@@ -16,7 +14,6 @@ class App extends Component{
     this.state = {social:0,economic:0, questionIndex:0};
     this.questions = {
 
-      //11 economic
       0 : {"question":"Taxation is theft", "affects":"economic", "direction": 1},
       1 : {"question":"The state should jail people for possessing illegal drugs", "affects":"social", "direction": 1},
       2 : {"question":"I support a carbon tax", "affects":"economic", "direction": -1},
