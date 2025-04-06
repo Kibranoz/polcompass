@@ -1,0 +1,10 @@
+.entriesRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.questionsColumn, .affectsColumn, .directionsColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

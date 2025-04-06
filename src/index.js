@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router";
+import { Designer } from './Designer/Designer';
 
 
 ReactDOM.render(
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Routes>
     <Route path="/" element={<App />} />
     <Route path='/:id' element={<App/>} />
+    <Route path="/create" element={<Designer/>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
