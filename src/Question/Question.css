@@ -5,7 +5,6 @@ div.question{
     flex-wrap: wrap;
     align-content: center;
     margin:auto;
-    align-items:center;
     text-align:center;
     width:300px;
     border-style: ridge;
