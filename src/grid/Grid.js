@@ -59,8 +59,8 @@ class Grid extends Component {
   }
   render() {
     this.state = {
-      ballX: this.props.economic * (200 / 24) + 200,
-      ballY: -1 * this.props.social * (200 / 26) + 200,
+      ballX: this.props.economic * (200 / (this.props.questionNumbers.x*2)) + 200,
+      ballY: -1 * this.props.social * (200 / (this.props.questionNumbers.y*2)) + 200,
     };
     return (
       <div className="grid-section">

@@ -13,7 +13,7 @@ class Question extends Component{
                 <div className="question">
                    { this.props.questionString }
                    <div className ="index">
-                     {this.props.index}/24
+                     {this.props.index}/{this.props.questionNumber}
                    </div>
                 </div>
             </Fragment>

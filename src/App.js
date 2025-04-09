@@ -17,6 +17,8 @@ export default function App() {
   const [fieldXName, setFieldXName] = useState("")
   const [fieldYName, setFieldYName] = useState("")
   const [questions, setQuestions] = useState([{}])
+  const [fieldXQuestionNumber, setFieldXQuestionNumber] = useState(0)
+  const [fieldYQuestionNumber, setFieldYQuestionNumber] = useState(0)
 
   useMemo(()=> {
     fetch("http://localhost:8080/questions?id="+params.id, {method:  "GET"})
@@ -25,11 +27,13 @@ export default function App() {
       setQuestions(data.questions)
       setFieldXName(data.Field1Name)
       setFieldYName(data.Field2Name)
+      setFieldXQuestionNumber(data.Field1QuestionQty)
+      setFieldYQuestionNumber(data.Field2QuestionQty)
     })
   }, [])
 
   const nextQuestion = () => {
-    if (questionIndex<24){
+    if (questionIndex<questions.length-1) {
       setQuestionIndex(questionIndex + 1)
   }
 }
@@ -47,8 +51,8 @@ export default function App() {
   return (
     <div className="App">
       <div className="overviewArea">
-      <Grid economic={fieldX} social={fieldY}></Grid>
-        <Question questionString={questions[questionIndex]["question"]} index={questionIndex}></Question>
+      <Grid questionNumbers={{"x": fieldXQuestionNumber, "y": fieldYQuestionNumber}} economic={fieldX} social={fieldY}></Grid>
+        <Question questionNumber={fieldXQuestionNumber + fieldYQuestionNumber} questionString={questions[questionIndex]["question"]} index={questionIndex}></Question>
       </div>
       <AnswerSelection onAnswerSelected={onAnswerSelected}/>
         </div>
