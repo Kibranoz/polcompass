@@ -21,7 +21,7 @@ export default function App() {
   const [fieldYQuestionNumber, setFieldYQuestionNumber] = useState(0)
 
   useMemo(()=> {
-    fetch("http://localhost:8080/questions?id="+params.id, {method:  "GET"})
+    fetch("http://localhost:8080/questions?id="+(params.id||"1"), {method:  "GET"})
     .then(res=>res.json())
     .then((data)=> {
       setQuestions(data.questions)
@@ -51,7 +51,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="overviewArea">
-      <Grid questionNumbers={{"x": fieldXQuestionNumber, "y": fieldYQuestionNumber}} economic={fieldX} social={fieldY}></Grid>
+      <Grid fieldNames={{"x": fieldXName, "y": fieldYName}} questionNumbers={{"x": fieldXQuestionNumber, "y": fieldYQuestionNumber}} economic={fieldX} social={fieldY}></Grid>
         <Question questionNumber={fieldXQuestionNumber + fieldYQuestionNumber} questionString={questions[questionIndex]["question"]} index={questionIndex}></Question>
       </div>
       <AnswerSelection onAnswerSelected={onAnswerSelected}/>
