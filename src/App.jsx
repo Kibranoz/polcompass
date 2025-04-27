@@ -1,10 +1,12 @@
 import './App.css';
-import  Grid  from "./grid/Grid.js";
-import Question from "./Question/Question.js";
-import AnswerSelection from "./AnswerSelection/AnswerSelection.js"
+import  Grid  from "./grid/Grid.jsx";
+import Question from "./Question/Question.jsx";
+import AnswerSelection from "./AnswerSelection/AnswerSelection.jsx"
 import { useState } from 'react';
-import { useMemo } from 'react';
+import { useEffect } from 'react';
 import { useParams } from "react-router";
+
+import CONFIG from './parameters.js';
 
 
 
@@ -20,8 +22,8 @@ export default function App() {
   const [fieldXQuestionNumber, setFieldXQuestionNumber] = useState(0)
   const [fieldYQuestionNumber, setFieldYQuestionNumber] = useState(0)
 
-  useMemo(()=> {
-    fetch("http://localhost:8080/questions?id="+(params.id||"1"), {method:  "GET"})
+  useEffect(()=> {
+    fetch(CONFIG.URL+"/questions?id="+(params.id||"1"), {method:  "GET"})
     .then(res=>res.json())
     .then((data)=> {
       setQuestions(data.questions)
@@ -49,13 +51,14 @@ export default function App() {
 
   }
   return (
-    <div className="App">
+    <>
+        <div className="App">
       <div className="overviewArea">
-      <Grid fieldNames={{"x": fieldXName, "y": fieldYName}} questionNumbers={{"x": fieldXQuestionNumber, "y": fieldYQuestionNumber}} economic={fieldX} social={fieldY}></Grid>
+        <Grid fieldNames={{ "x": fieldXName, "y": fieldYName }} questionNumbers={{ "x": fieldXQuestionNumber, "y": fieldYQuestionNumber }} economic={fieldX} social={fieldY}></Grid>
         <Question questionNumber={fieldXQuestionNumber + fieldYQuestionNumber} questionString={questions[questionIndex]["question"]} index={questionIndex}></Question>
       </div>
-      <AnswerSelection onAnswerSelected={onAnswerSelected}/>
-        </div>
+      <AnswerSelection onAnswerSelected={onAnswerSelected} />
+    </div></>
   );
 
 }

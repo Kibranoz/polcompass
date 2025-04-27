@@ -1,0 +1,20 @@
+.header, .headerLinks {
+    width: 100%;
+    font-size: 20px;
+    background: linear-gradient(to right, #00063d, #026dca);
+    color: white;
+    display: flex;
+}
+
+.headerText {
+    align-content: center;
+}
+.headerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    a {
+        color: white;
+    }
+}

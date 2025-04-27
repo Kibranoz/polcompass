@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import CONFIG from "../parameters.js"
 
 import "./designer.css"
 
@@ -10,6 +11,9 @@ export function Designer() {
     const [affectsDesigners, setAffectsDesigners] = useState([])
     const [directionsDesigners, setDirectionsDesigners] = useState([])
     const [questionsNumbers, setQuestionNumbers] = useState([])
+
+    const [polcompassName, setPolcompassName] = useState("")
+    const [polcompassDescription, setPolcompassDescription] = useState("")
 
     const [xFieldName, setXFieldName] = useState("")
     const [yFieldName, setYFieldName] = useState("")
@@ -39,16 +43,22 @@ export function Designer() {
         }
     }
 
+    window.submit = async function() {
+        await submit()
+    }
+
     async function submit() {
         parseQuestions()
         console.log(questions)
         const data = {
+            name: polcompassName,
+            description: polcompassDescription,
             field1_name: xFieldName,
             field2_name: yFieldName,
             questions: questions
         }
         console.log(data)
-        await fetch("http://localhost:8080/questions", { method: "POST", body: JSON.stringify(data) })
+        await fetch(CONFIG.URL+"/questions", { method: "POST", body: JSON.stringify(data) })
         .then(response => {
             if (response.ok) {
                 console.log("Success")
@@ -84,6 +94,15 @@ export function Designer() {
     return (
         <Fragment>
             <div className="fieldName">
+                <label>Name: </label>
+                <input type="text" onChange={(el) => setPolcompassName(el.target.value)}></input>
+            
+            </div>
+            <div className="fieldName">
+                <label>Description: </label>
+                <input  className="largeInput" type="text" onChange={(el) => setPolcompassDescription(el.target.value)}></input>
+            </div>
+                        <div className="fieldName">
                 <label>X field name: </label>
                 <input disabled={fieldNameDisabled} type="text" onChange={xFieldHandler}></input>
                 <label>Y field name: </label>
@@ -110,7 +129,12 @@ export function Designer() {
         <button disabled={!addQuestionAllowed} onClick={addNewQuestion}>
         Add new Question
         </button>
-        <button disabled={!addQuestionAllowed} onClick={submit}>Submit</button>
+        <button 
+        class="g-recaptcha" 
+        data-sitekey="6LeiAhcrAAAAAIfDkNPGsPQ72aFeE29ZF0pZ2zMQ" 
+        data-callback="submit" 
+        data-action='submit'
+        disabled={!addQuestionAllowed}>Submit</button>
         </Fragment>
     )
 

@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import { Component, Fragment } from "react";
 import "./AnswerSelection.css"
 import "./AnswerButton.css"
