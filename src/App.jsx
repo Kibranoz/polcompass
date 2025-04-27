@@ -7,8 +7,7 @@ import { useEffect } from 'react';
 import { useParams } from "react-router";
 
 import CONFIG from './parameters.js';
-
-
+import { useTranslation } from 'react-i18next'
 
 export default function App() {
   let params = useParams(); 

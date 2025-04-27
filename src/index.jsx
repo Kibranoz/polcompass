@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals.js';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Designer } from './Designer/Designer.jsx';
 import List from './List/List.jsx';
+import "./i18n.js";
 
 ReactDOM.createRoot(  document.getElementById('root')
 ).render(

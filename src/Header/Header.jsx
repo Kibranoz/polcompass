@@ -1,11 +1,13 @@
 import "./Header.css";
 
 import { useState } from "react";
+import { useTranslation } from 'react-i18next'
 
 export default function Header() {
     const [linkVisible, setLinkVisible] = useState(false)
     const [hamburger, setHamburger] = useState("hamburger.svg")
 
+    const {t, i18n} = useTranslation()
 
     function toggleLinkIsVisible() {
         if (linkVisible) {
@@ -24,9 +26,9 @@ export default function Header() {
         </div>
         { linkVisible ? ( 
             <div className="headerLinks">
-                <a href="/">Home</a>
-                <a href="/create">Create</a>
-                <a href="/list">List</a>
+                <a href="/">{t("header.home")}</a>
+                <a href="/create">{t("header.create")}</a>
+                <a href="/list">{t("header.list")}</a>
             </div>
          ) : null }
          </>

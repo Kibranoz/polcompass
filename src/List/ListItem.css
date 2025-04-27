@@ -3,7 +3,7 @@
     border: 1px solid #808080;
 }
 
-.listItem:nth-child(even) {
+.listItem:nth-child(odd of .listItem) {
     background-color: #deffff;
 }
 
