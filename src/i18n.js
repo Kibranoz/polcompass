@@ -25,6 +25,19 @@ const resources = {
       },
       list: {
         "see_compass": "See the political compass"
+      },
+      create: {
+        "name": "Name",
+        "desc": "Description",
+        "x_field": "X Field Name",
+        "y_field": "Y field Name",
+        "questions": "Questions",
+        "affects": "Affects",
+        "direction": "Direction",
+        "new_question": "New question",
+        "submit": "Submit",
+        "up": "Up or rightwards",
+        "down": "Down or leftwards"
       }
 
     }
@@ -40,14 +53,26 @@ const resources = {
         "d": "Pas d'accord",
         "td": "Pas du tout d'accord"
       },
-      list: {
-        "see_compass": "Voir la boussole politique"
-      },
-
       header: {
         "home": "Accueil",
         "create": "Créer",
         "list": "Liste",
+      },
+      list: {
+        "see_compass": "Voir la boussole politique"
+      },
+      create: {
+        "name": "Nom",
+        "desc": "Description",
+        "x_field": "Nom du champ X",
+        "y_field": "Nom du champ Y",
+        "questions": "Questions",
+        "affects": "Affecte",
+        "direction": "Direction",
+        "new_question": "Nouvelle question",
+        "submit": "Soumettre",
+        "up": "Haut ou vers la droite",
+        "down": "Bas ou vers la gauche"
       }
     }
   }

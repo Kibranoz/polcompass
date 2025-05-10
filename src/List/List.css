@@ -1,0 +1,14 @@
+.pageLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.pageLink {
+    cursor: pointer;
+}
+
+.pageLink.selected {
+    text-decoration: underline;
+}

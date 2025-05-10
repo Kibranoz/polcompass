@@ -1,9 +1,12 @@
 import { Fragment, useState } from "react";
 import CONFIG from "../parameters.js"
+import { useTranslation } from 'react-i18next'
+
 
 import "./designer.css"
 
 export function Designer() {
+    const {t, i18n} = useTranslation()
     const [questions, setQuestions] = useState([])
     const [lastQuestionId, setLastQuestionId] = useState(0)
 
@@ -25,7 +28,7 @@ export function Designer() {
     function addNewQuestion() {
         setQuestionsDesigners([...questionsDesigners, <input type="text" id={"question_"+lastQuestionId}/>])
         setAffectsDesigners([...affectsDesigners, <select id={"affects_"+lastQuestionId}><option value={xFieldName}>{xFieldName}</option><option value={yFieldName}>{yFieldName}</option></select>])
-        setDirectionsDesigners([...directionsDesigners, <select id={"direction_"+lastQuestionId}><option value="1">Up or rightwards</option><option value="-1">Down or leftwards</option></select>])
+        setDirectionsDesigners([...directionsDesigners, <select id={"direction_"+lastQuestionId}><option value="1">{t("create.up")}</option><option value="-1">{t("create.down")}</option></select>])
         if (lastQuestionId == 0) {
             setFieldNameDisabled(true)
         }
@@ -94,18 +97,19 @@ export function Designer() {
     return (
         <Fragment>
             <div className="fieldName">
-                <label>Name: </label>
+                <label>{t("create.name")}: </label>
+
                 <input type="text" onChange={(el) => setPolcompassName(el.target.value)}></input>
             
             </div>
             <div className="fieldName">
-                <label>Description: </label>
+                <label>{t("create.desc")}: </label>
                 <input  className="largeInput" type="text" onChange={(el) => setPolcompassDescription(el.target.value)}></input>
             </div>
                         <div className="fieldName">
-                <label>X field name: </label>
+                <label>{t("create.x_field")} </label>
                 <input disabled={fieldNameDisabled} type="text" onChange={xFieldHandler}></input>
-                <label>Y field name: </label>
+                <label>{t("create.y_field")}: </label>
                 <input disabled={fieldNameDisabled} type="text" onChange={yFieldHandler}></input>
             </div>
             <div className="entriesRow">
@@ -114,27 +118,24 @@ export function Designer() {
                 {questionsNumbers}
             </div>
             <div className="questionsColumn">
-                Questions
+                {t("create.questions")}
                 {questionsDesigners}
             </div>
             <div className="affectsColumn">
-                Affects
+                {t("create.affects")}
                 {affectsDesigners}
             </div>
             <div className="directionsColumn">
-                Direction
+                {t("create.direction")}
                 {directionsDesigners}
             </div>
             </div>
         <button disabled={!addQuestionAllowed} onClick={addNewQuestion}>
-        Add new Question
+        {t("create.new_question")}
         </button>
         <button 
-        class="g-recaptcha" 
-        data-sitekey="6LeiAhcrAAAAAIfDkNPGsPQ72aFeE29ZF0pZ2zMQ" 
-        data-callback="submit" 
-        data-action='submit'
-        disabled={!addQuestionAllowed}>Submit</button>
+        onClick={submit}
+        disabled={!addQuestionAllowed}>{t("create.submit")}</button>
         </Fragment>
     )
 
