@@ -19,7 +19,7 @@ class Grid extends Component {
   drawPolCompass() {
     const canvas = document.getElementById("gridCanvas");
     const ctx = canvas.getContext("2d");
-    
+
     const colors = [
       "#f72525", // Top-left
       "#2584f7", // Top-right
@@ -58,20 +58,20 @@ class Grid extends Component {
 
   isOnMobile() {
     let width = Math.max(window.screen.width, window.innerWidth);
-    return width<=500
+    return width <= 500;
   }
 
   getSquareWidth() {
     return this.isOnMobile() ? 100 : 200;
   }
   render() {
-    let responsiveCanvas =  this.isOnMobile() ? <canvas width="200" height="200" id="gridCanvas"></canvas> : <canvas width="400" height="400" id="gridCanvas"></canvas>
+    let responsiveCanvas = this.isOnMobile() ? <canvas width="200" height="200" id="gridCanvas"></canvas> : <canvas width="400" height="400" id="gridCanvas"></canvas>
     this.state = {
-      ballX: this.props.economic * (this.getSquareWidth() / (this.props.questionNumbers.x*2)) + this.getSquareWidth(),
-      ballY: -1 * this.props.social * (this.getSquareWidth() / (this.props.questionNumbers.y*2)) + this.getSquareWidth(),
+      ballX: this.props.economic * (this.getSquareWidth() / (this.props.questionNumbers.x * 2)) + this.getSquareWidth(),
+      ballY: -1 * this.props.social * (this.getSquareWidth() / (this.props.questionNumbers.y * 2)) + this.getSquareWidth(),
     };
     return (
-        <><div className="gridArea">
+      <><div className="gridArea">
         <div className="gridLabel verticalLabel">{this.props.fieldNames.y}</div>
         <div className="gridArea_verticalElements">
           <div className="gridLabel horizontalLabel">{this.props.fieldNames.x}</div>
@@ -80,7 +80,7 @@ class Grid extends Component {
         </div>
       </div><div>
         </div>
-        </>
+      </>
     );
   }
 }
