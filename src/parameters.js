@@ -1,4 +1,4 @@
-const MODE = 'PROD';
+const MODE = "PROD";
 
 var CONFIG = {
   URL: "https://politicalcompass-bf260743f9ce.herokuapp.com",

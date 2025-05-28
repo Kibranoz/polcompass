@@ -167,6 +167,7 @@ export function Designer() {
       <button onClick={submit} disabled={!addQuestionAllowed}>
         {t("create.submit")}
       </button>
+      <div>{t("create.beta")}</div>
     </Fragment>
   );
 }
