@@ -1,5 +1,11 @@
+const MODE = "dev";
+
 var CONFIG = {
-    URL: "http://127.0.0.1:8080",
+  URL: "https://politicalcompass-bf260743f9ce.herokuapp.com",
+};
+
+if (MODE === "dev") {
+  CONFIG.URL = "http://localhost:8080"; // Adjust port as needed
 }
 
 export default CONFIG;
