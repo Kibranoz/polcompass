@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import { Component } from "react";
 import "./Grid.css";
 
@@ -9,7 +8,7 @@ class Grid extends Component {
   }
 
   componentDidUpdate() {
-    const canvas = document.getElementById("myCanvas");
+    const canvas = document.getElementById("gridCanvas");
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     ctx.beginPath();
@@ -18,10 +17,9 @@ class Grid extends Component {
   }
 
   drawPolCompass() {
-    const canvas = document.getElementById("myCanvas");
+    const canvas = document.getElementById("gridCanvas");
     const ctx = canvas.getContext("2d");
 
-    // Define the colors for the four squares
     const colors = [
       "#f72525", // Top-left
       "#2584f7", // Top-right
@@ -46,7 +44,7 @@ class Grid extends Component {
   }
 
   drawBallAtPosition() {
-    const canvas = document.getElementById("myCanvas");
+    const canvas = document.getElementById("gridCanvas");
     const ctx = canvas.getContext("2d");
     ctx.fillStyle = "white";
     ctx.arc(this.state.ballX, this.state.ballY, 5, 0, 2 * Math.PI);
@@ -57,20 +55,32 @@ class Grid extends Component {
     this.drawPolCompass();
     this.drawBallAtPosition();
   }
+
+  isOnMobile() {
+    let width = Math.max(window.screen.width, window.innerWidth);
+    return width <= 500;
+  }
+
+  getSquareWidth() {
+    return this.isOnMobile() ? 100 : 200;
+  }
   render() {
+    let responsiveCanvas = this.isOnMobile() ? <canvas width="200" height="200" id="gridCanvas"></canvas> : <canvas width="400" height="400" id="gridCanvas"></canvas>
     this.state = {
-      ballX: this.props.economic * (200 / 24) + 200,
-      ballY: -1 * this.props.social * (200 / 26) + 200,
+      ballX: this.props.economic * (this.getSquareWidth() / (this.props.questionNumbers.x * 2)) + this.getSquareWidth(),
+      ballY: -1 * this.props.social * (this.getSquareWidth() / (this.props.questionNumbers.y * 2)) + this.getSquareWidth(),
     };
     return (
-      <div className="grid-section">
-        <div className="grid-area">
-          <canvas id="myCanvas" width="400" height="400"></canvas>
+      <><div className="gridArea">
+        <div className="gridLabel verticalLabel">{this.props.fieldNames.y}</div>
+        <div className="gridArea_verticalElements">
+          <div className="gridLabel horizontalLabel">{this.props.fieldNames.x}</div>
+          {responsiveCanvas}
+          <div>{this.props.economic} , {this.props.social}</div>
         </div>
-        <div>
-          {this.props.economic} , {this.props.social}
+      </div><div>
         </div>
-      </div>
+      </>
     );
   }
 }

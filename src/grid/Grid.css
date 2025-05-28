@@ -1,9 +1,18 @@
-.Grid img {
-    resize: 10%;
+.gridArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.verticalLabel {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
-.grid-section {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+@media screen and (max-width: 500px) {
+    .gridArea {
+        margin: auto;
+    }
+    
 }

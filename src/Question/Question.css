@@ -4,18 +4,15 @@ div.question{
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
-    margin:auto;
-    align-items:center;
+    margin-top: auto;
+    margin-bottom: auto;
     text-align:center;
     width:300px;
     border-style: ridge;
     background-color: rgb(188, 255, 179);
 }
+
 div.index{
     align-items:flex-end;
 
 }
-div{
-    font-size:27px;
-}
-

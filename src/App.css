@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 100%;
+  width: 100%;
 }
 
 .overviewArea {
@@ -12,7 +12,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 10px;
-  max-width: 100%;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .App-logo {
@@ -24,21 +25,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .qContainer{

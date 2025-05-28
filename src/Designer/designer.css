@@ -1,0 +1,35 @@
+.entriesRow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 0 10px 10px 10px
+}
+
+.questionsColumn, .affectsColumn, .directionsColumn, .numbersColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.questionsColumn {
+    flex-grow: 2;
+}
+
+.affectsColumn {
+    flex-grow: 1;
+}
+
+.fieldName {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+    width: 100%;
+
+    gap: 10px;
+    
+    .largeInput {
+        flex-grow: 2;
+    }
+
+}

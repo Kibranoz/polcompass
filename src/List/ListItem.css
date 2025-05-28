@@ -1,0 +1,13 @@
+.listItem {
+    padding : 10px;
+    border: 1px solid #808080;
+}
+
+.listItem:nth-child(odd of .listItem) {
+    background-color: #deffff;
+}
+
+.listItemTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
