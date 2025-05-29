@@ -26,9 +26,9 @@ export default function Header() {
         </div>
         { linkVisible ? ( 
             <div className="headerLinks">
-                <a href="/">{t("header.home")}</a>
-                <a href="/create">{t("header.create")}</a>
-                <a href="/list">{t("header.list")}</a>
+                <a href="/#">{t("header.home")}</a>
+                <a href="/#/create">{t("header.create")}</a>
+                <a href="/#/list">{t("header.list")}</a>
             </div>
          ) : null }
          </>
