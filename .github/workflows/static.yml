@@ -39,8 +39,8 @@ jobs:
         run: npm run build
         env:
           CI: false
-      - name: List dist contents
-        run: ls -l dist
+      - name: List folders content
+        run: ls
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
