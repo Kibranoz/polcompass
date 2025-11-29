@@ -1,7 +1,7 @@
 const MODE = "PROD";
 
 var CONFIG = {
-  URL: "https://d37twrk5hlymna.cloudfront.net/",
+  URL: "https://d37twrk5hlymna.cloudfront.net",
 };
 
 if (MODE === "dev") {
