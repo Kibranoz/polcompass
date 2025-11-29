@@ -1,7 +1,7 @@
 const MODE = "PROD";
 
 var CONFIG = {
-  URL: "https://politicalcompass-bf260743f9ce.herokuapp.com",
+  URL: "http://louisrcouture.ddns.net:50999",
 };
 
 if (MODE === "dev") {
