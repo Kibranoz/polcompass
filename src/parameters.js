@@ -1,7 +1,7 @@
 const MODE = "PROD";
 
 var CONFIG = {
-  URL: "http://louisrcouture.ddns.net:50999",
+  URL: "https://d37twrk5hlymna.cloudfront.net/",
 };
 
 if (MODE === "dev") {
